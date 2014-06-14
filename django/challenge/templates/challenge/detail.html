@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Reto #{{ challenge.id  }}: {{ challenge.name }}</title>
+    </head>
+    <body>
+        <h1>Reto #{{ challenge.id  }}</h1>
+        <h2>{{ challenge.name }}</h2>
+
+        {% if error_message %}
+            <p>
+                <b>{{ error_message }}</b>
+            </p>
+        {% endif %}
+
+        <p>
+            {{ challenge.description | linebreaksbr }}
+        </p>
+
+        <form action="{% url 'challenge:answer' challenge.id %}" method="post">
+            {% csrf_token %}
+            <input type="text" name="answer" value="" maxlength="255" />
+            <input type="submit" name="submit" value="Enviar" />
+        </form>
+    </body>
+</html>

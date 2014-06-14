@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Lista de Retos</title>
+    </head>
+    <body>
+        <h1>Lista de Retos</h1>
+        {% if challenge_list %}
+            <ul>
+            {% for challenge in challenge_list %}
+                <li>
+                    <a href="{% url 'challenge:detail' challenge.id %}">{{ challenge.id }}. {{ challenge.name }}</a>
+                </li>
+            {% endfor %}
+            </ul>
+        {% endif %}
+    </body>
+</html>

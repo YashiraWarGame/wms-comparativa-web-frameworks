@@ -1,0 +1,33 @@
+ <?php
+ 
+ $title = 'Challenge ' . $challenge->getChallengeID();
+ $this->headTitle($title);
+ ?>
+
+<div class="panel panel-primary">
+    <div class="panel-heading">
+        <h3 class="panel-title"><?php echo $challenge->getName(); ?></h3>
+    </div>
+    <div id="panel-body">
+        <div>
+            <?php echo $this->escapeHtml($challenge->getDescription());?>
+        </div>
+        <div>
+            <?php
+                $form->setAttribute('action', $this->url('challenge', array('action' => 'view', 'id' => $challenge->getChallengeID())));
+                $form->prepare();
+                
+                echo $this->form()->openTag($form);
+                echo $this->formRow($form->get('answer'));
+                echo $this->formRow($form->get('token'));
+                echo $this->formSubmit($form->get('submit'));
+                echo $this->form()->closeTag();
+            ?>
+        </div>
+        <div>
+            Creado: <?php echo $this->escapeHtml($challenge->getCreationDate()); ?><br />
+            Publicado: <?php echo $this->escapeHtml($challenge->getPublicationDate()); ?><br />
+            Actualizado: <?php echo $this->escapeHtml($challenge->getUpdateDate()); ?><br />
+        </div>
+    </div>
+</div>
