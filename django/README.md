@@ -1,5 +1,5 @@
 ###WMS con Django 1.6.x
-#####Por @g30rg3x
+__Por @g30rg3x__
 
 ####Instalacion
 ```Shell

@@ -1,5 +1,5 @@
 ###WMS con Zend Framework 2
-#####Por @sinfocol
+__Por @sinfocol__
 
 ####Notas
 A petición explicita del autor, esta versión no es totalmente funcional.

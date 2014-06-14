@@ -1,4 +1,4 @@
-###Comparativa de las Web Frameworks a usar para el desarrollo de la WMS
+####Comparativa de las Web Frameworks a usar para el desarrollo de la WMS
 
 Este repositorio guarda todas las versiones preliminares de la WMS, para
 efectos de comparación de las que creemos son las mejores frameworks web
@@ -7,7 +7,7 @@ para el proyecto.
 
 ####¿Que es la WMS?
 
-**W**argame **M**anagement **S**ystem
+__W__ argame __M__ anagement __S__ ystem
 
 Es el nombre oficial de lo que solíamos llamar en el Yashira WarGame al motor YV3 (Yashira V3),
 el cual tiene como objetivo reemplazar al actual motor e incluir nuevas funcionalidades a su paso.
