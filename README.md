@@ -25,6 +25,6 @@ el cual tiene como objetivo reemplazar al actual motor e incluir nuevas funciona
 
 ####¿Como Puedo Ayudar?
 
-Dándonos tu opinión en el foro con tus experiencias de desarrollo con las frameworks o
+[Dándonos tu opinión en el foro](http://www.yashira.org/index.php?showtopic=12158) con tus experiencias de desarrollo con las frameworks o
 bien con sugerencias de otras frameworks a usar (agradeceríamos un par de pull requests
 en lugar de solo palabras sobre que XY Framework es mejor por WZ).
